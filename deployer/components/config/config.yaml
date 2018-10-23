@@ -1,0 +1,5 @@
+somekey: "some-value"
+another-key: "key with 'some single quotes'"
+list: 
+  - value 
+  - 'value1'
