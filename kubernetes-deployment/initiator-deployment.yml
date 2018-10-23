@@ -1,19 +1,19 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: workflow-initiator
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: workflow-initiator
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: workflow-initiator
     spec:
       containers:
         - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-          name: guestbook-ui
+          name: workflow-initiator
           ports:
             - containerPort: 80

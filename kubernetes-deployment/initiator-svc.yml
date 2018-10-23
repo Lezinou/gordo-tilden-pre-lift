@@ -2,11 +2,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui
+  name: workflow-initiator
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: guestbook-ui
+    app: workflow-initiator
   type: LoadBalancer
