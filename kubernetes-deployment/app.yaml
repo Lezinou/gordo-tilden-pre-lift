@@ -2,7 +2,7 @@ apiVersion: 0.1.0
 environments:
   default:
     destination:
-      namespace: argocd
+      namespace: default
       server: https://auroracicd-auroracicdrg-019958-9a155ed3.hcp.northeurope.azmk8s.io:443
     k8sVersion: v1.8.0
     path: default
