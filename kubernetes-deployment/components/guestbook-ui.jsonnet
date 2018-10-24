@@ -25,8 +25,12 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                      "command": wfparams.command,
                      "env": [
                          {
-                             "name": "CONFIG",
+                             "name": "MACHINE_CONFIG",
                              "value": importstr "./config/config.yaml"
+                         },
+                         {
+                             "name": "ARGO_SUBMIT",
+                             "value": true
                          },
                      ],
                   }

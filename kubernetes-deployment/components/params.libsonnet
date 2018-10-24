@@ -16,9 +16,8 @@
     },
 
     "workflow-initiator": {
-      image: "milesg/echo-config:latest",
+      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.1",
       name: "ks-workflow-initiator",
-      command: ["python", "/code/echo_config.py"],
     },
   },
 }
