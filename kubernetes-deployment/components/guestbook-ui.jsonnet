@@ -84,10 +84,6 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                      "image": params.image,
                      "name": params.name,
                      "env": [
-                         {
-                             "name": "CONFIG",
-                             "value": importstr "./config/config.yaml"
-                         },
                      ],
                      "ports": [
                      {
