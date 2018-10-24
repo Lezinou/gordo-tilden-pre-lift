@@ -12,4 +12,4 @@ registries:
   incubator:
     protocol: github
     uri: github.com/ksonnet/parts/tree/master/incubator
-version: 0.0.1
+version: 0.1.0
