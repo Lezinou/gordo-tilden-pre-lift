@@ -22,7 +22,6 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                   {
                      "image": wfparams.image,
                      "name": wfparams.name,
-                     "command": wfparams.command,
                      "env": [
                          {
                              "name": "MACHINE_CONFIG",
