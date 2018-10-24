@@ -29,7 +29,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                          },
                          {
                              "name": "ARGO_SUBMIT",
-                             "value": true
+                             "value": 1
                          },
                      ],
                   }
