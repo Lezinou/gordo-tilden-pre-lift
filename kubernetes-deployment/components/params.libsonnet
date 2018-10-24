@@ -16,9 +16,9 @@
     },
 
     "workflow-initiator": {
-      image: "python:3.6-slim-stretch",
+      image: "milesg/echo-config:latest",
       name: "ks-workflow-initiator",
-      command: ["bash", "-c", "pip install pyyaml && python -c 'import io, yaml, os;string = io.StringIO(os.environ[\"CONFIG\"]);print(yaml.load(string))'"],
+      command: ["python", "/code/echo_config.py"],
     },
   },
 }
