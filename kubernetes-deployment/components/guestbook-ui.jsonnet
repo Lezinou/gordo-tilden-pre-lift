@@ -31,6 +31,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                      ],
                   }
                ],
+               "restartPolicy": "Never"
             }
          }
       }
