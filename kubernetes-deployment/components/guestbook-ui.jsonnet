@@ -1,6 +1,40 @@
 local env = std.extVar("__ksonnet/environments");
 local params = std.extVar("__ksonnet/params").components["guestbook-ui"];
+local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"];
 [
+    {
+      "apiVersion": "batch/v1",
+      "kind": "Job",
+      "metadata": {
+         "generateName": wfparams.name,
+         "annotations": {
+             "argocd.argoproj.io/hook": "PostSync",
+             "argocd.argoproj.io/hook-delete-policy": "OnSuccess"
+         },
+      },
+      "spec": {
+         "template": {
+            "metadata": {
+               "name": wfparams.name
+            },
+            "spec": {
+               "containers": [
+                  {
+                     "image": wfparams.image,
+                     "name": wfparams.name,
+                     "command": wfparams.command,
+                     "env": [
+                         {
+                             "name": "CONFIG",
+                             "value": importstr "./config/config.yaml"
+                         },
+                     ],
+                  }
+               ],
+            }
+         }
+      }
+   },
    {
       "apiVersion": "v1",
       "kind": "Service",

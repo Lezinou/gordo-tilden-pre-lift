@@ -14,5 +14,11 @@
       servicePort: 80,
       type: "LoadBalancer",
     },
+
+    "workflow-initiator": {
+      image: "python:3.6-slim-stretch",
+      name: "ks-workflow-initiator",
+      command: ["bash", "-c", "pip install pyyaml && python -c 'import io, yaml, os;string = io.StringIO(os.environ[\"CONFIG\"]);print(yaml.load(string))'"],
+    },
   },
 }
