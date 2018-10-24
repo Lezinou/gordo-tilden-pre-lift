@@ -13,6 +13,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
          },
       },
       "spec": {
+         "backoffLimit": 2,
          "template": {
             "metadata": {
                "name": wfparams.name
