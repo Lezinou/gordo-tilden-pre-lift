@@ -44,7 +44,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
       }
    },
 
-   // Storage account - azurefile
+   // Storage class - azurefile
    {
         "apiVersion": "storage.k8s.io/v1",
         "kind": "StorageClass",
@@ -56,7 +56,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
             "labels": {
                 "kubernetes.io/cluster-service": "true"
             },
-            "name": "azurefile",
+            "name": "azurefileclass",
         },
         "parameters": {
             "cachingmode": "None",
@@ -66,6 +66,24 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         "provisioner": "kubernetes.io/azure-disk",
         "reclaimPolicy": "Delete"
    },
+
+   // Persistant volume claim - instance of storage class
+    {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "metadata": {
+            "name": "azurefile"
+        },
+        "spec": {
+            "accessModes": ["ReadWriteMany"],
+        },
+        "storageClassName": "azurefileclass",
+        "resources": {
+            "requests": {
+                "storage": "5Gi"
+            },
+        },
+    },
 
    //  Role
    {
