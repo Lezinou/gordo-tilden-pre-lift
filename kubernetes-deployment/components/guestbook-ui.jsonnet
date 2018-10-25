@@ -83,7 +83,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
        "subjects": [
            {
                "kind": "ServiceAccount",
-               "name": "default:default",
+               "name": "default",
            },
        ],
        "roleRef": {
