@@ -13,6 +13,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
          },
       },
       "spec": {
+         "serviceAccountName": wfparams.serviceAccountName,
          "backoffLimit": 2,
          "template": {
             "metadata": {
@@ -39,6 +40,55 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
             }
          }
       }
+   },
+
+   //  Role
+   {
+       "apiVersion": "rbac.authorization.k8s.io/v1",
+       "kind": "Role",
+       "metadata": {
+           "namespace": wfparams.namespace,
+           "name": wfparams.roleName
+       },
+       "rules": [
+           {
+               "apiGroups": ["argoproj.io"],
+               "resources": ["workflows"],
+               "verbs": ["get", "list", "watch", "create", "update", "patch", "delete"],
+           },
+       ],
+   },
+
+   // ServiceAccount
+    {
+        "apiVersion": "v1",
+        "kind": "ServiceAccount",
+        "metadata": {
+            "name": wfparams.serviceAccountName,
+            "namespace": wfparams.namespace
+        },
+    },
+
+   // RoleBinding
+   {
+       "apiVersion": "rbac.authorization.k8s.io/v1",
+       "kind": "RoleBinding",
+       "metadata": {
+           "name": wfparams.roleName,
+           "namespace": wfparams.namespace
+       },
+       "subjects": [
+           {
+               "kind": "ServiceAccount",
+               "name": wfparams.serviceAccountName,
+               "apiGroup": "rbac.authorization.k8s.io"
+           },
+       ],
+       "roleRef": {
+           "kind": "Role",
+           "name": wfparams.roleName,
+           "apiGroup": "rbac.authorization.k8s.io"
+       },
    },
    {
       "apiVersion": "v1",
