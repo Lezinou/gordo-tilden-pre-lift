@@ -81,7 +81,6 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
            {
                "kind": "ServiceAccount",
                "name": wfparams.serviceAccountName,
-               "apiGroup": "rbac.authorization.k8s.io"
            },
        ],
        "roleRef": {
