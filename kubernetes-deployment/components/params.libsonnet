@@ -16,7 +16,7 @@
     },
 
     "workflow-initiator": {
-      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.1",
+      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.2",
       name: "ks-workflow-initiator",
     },
   },
