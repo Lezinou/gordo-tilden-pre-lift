@@ -11,10 +11,11 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
              "argocd.argoproj.io/hook": "PostSync",
              "argocd.argoproj.io/hook-delete-policy": "OnSuccess"
          },
-         
+
       },
       "spec": {
          "serviceAccountName": wfparams.serviceAccountName,
+         "serviceAccount": wfparams.serviceAccountName,
          "backoffLimit": 2,
          "template": {
             "metadata": {
