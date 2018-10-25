@@ -61,6 +61,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
        ],
    },
 
+
    // ServiceAccount
     {
         "apiVersion": "v1",
@@ -71,7 +72,28 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         },
     },
 
-   // RoleBinding
+   // RoleBinding - default view, allow read-only
+   {
+       "apiVersion": "rbac.authorization.k8s.io/v1",
+       "kind": "RoleBinding",
+       "metadata": {
+           "name": "default-view",
+           "namespace": wfparams.namespace
+       },
+       "subjects": [
+           {
+               "kind": "ServiceAccount",
+               "name": "default:default",
+           },
+       ],
+       "roleRef": {
+           "kind": "ClusterRole",
+           "name": "view",
+           "apiGroup": "rbac.authorization.k8s.io"
+       },
+   },
+
+   // RoleBinding - allow argo submitting
    {
        "apiVersion": "rbac.authorization.k8s.io/v1",
        "kind": "RoleBinding",
