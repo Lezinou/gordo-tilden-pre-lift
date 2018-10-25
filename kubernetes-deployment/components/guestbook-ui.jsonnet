@@ -49,16 +49,21 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         "apiVersion": "storage.k8s.io/v1",
         "kind": "StorageClass",
         "metadata": {
-            "name": "azurefile",
+            "name": "standard",
         },
+        "mountOptions": [
+            "dir_mode=0777",
+            "file_mode=0777",
+            "uid=1000",
+            "gid=1000"
+        ],
         "parameters": {
-            "cachingmode": "None",
-            "kind": "Managed",
-            "storageaccounttype": "Standard_LRS"
+            "skuName": "Standard_LRS",
+            "storageAccount": "auroraprodstorageaccount"
         },
         "provisioner": "kubernetes.io/azure-file",
         "reclaimPolicy": "Delete"
-   },
+    },
 
    // Persistant volume claim - instance of storage class
     {
@@ -70,7 +75,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         "spec": {
             "accessModes": ["ReadWriteMany"],
         },
-        "storageClassName": "azurefile",
+        "storageClassName": "standard",
         "resources": {
             "requests": {
                 "storage": "5Gi"
