@@ -63,7 +63,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
             "kind": "Managed",
             "storageaccounttype": "Standard_LRS"
         },
-        "provisioner": "kubernetes.io/azure-disk",
+        "provisioner": "kubernetes.io/azure-file",
         "reclaimPolicy": "Delete"
    },
 
