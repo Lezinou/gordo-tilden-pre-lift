@@ -44,6 +44,29 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
       }
    },
 
+   // Storage account - azurefile
+   {
+        "apiVersion": "storage.k8s.io/v1",
+        "kind": "StorageClass",
+        "metadata": {
+            "annotations": {
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"storage.k8s.io/v1beta1\",\"kind\":\"StorageClass\",\"metadata\":{\"annotations\":{\"storageclass.beta.kubernetes.io/is-default-class\":\"true\"},\"labels\":{\"kubernetes.io/cluster-service\":\"true\"},\"name\":\"default\",\"namespace\":\"\"},\"parameters\":{\"cachingmode\":\"None\",\"kind\":\"Managed\",\"storageaccounttype\":\"Standard_LRS\"},\"provisioner\":\"kubernetes.io/azure-disk\"}\n",
+                "storageclass.beta.kubernetes.io/is-default-class": "true"
+            },
+            "labels": {
+                "kubernetes.io/cluster-service": "true"
+            },
+            "name": "azurefile",
+        },
+        "parameters": {
+            "cachingmode": "None",
+            "kind": "Managed",
+            "storageaccounttype": "Standard_LRS"
+        },
+        "provisioner": "kubernetes.io/azure-disk",
+        "reclaimPolicy": "Delete"
+   },
+
    //  Role
    {
        "apiVersion": "rbac.authorization.k8s.io/v1",
