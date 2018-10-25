@@ -56,7 +56,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
             "labels": {
                 "kubernetes.io/cluster-service": "true"
             },
-            "name": "azurefileclass",
+            "name": "azurefile",
         },
         "parameters": {
             "cachingmode": "None",
@@ -77,7 +77,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         "spec": {
             "accessModes": ["ReadWriteMany"],
         },
-        "storageClassName": "azurefileclass",
+        "storageClassName": "azurefile",
         "resources": {
             "requests": {
                 "storage": "5Gi"
