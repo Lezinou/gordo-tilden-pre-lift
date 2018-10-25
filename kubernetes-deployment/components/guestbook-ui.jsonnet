@@ -69,11 +69,12 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
     {
         "apiVersion": "v1",
         "kind": "PersistentVolumeClaim",
-        "metadata": {
-            "name": "azurefileclaim"
-        },
         "spec": {
+            "name": "azurefile",
             "accessModes": ["ReadWriteMany"],
+            "resources": {
+                "storage": "5Gi"
+            },
         },
         "storageClassName": "standard",
         "resources": {
