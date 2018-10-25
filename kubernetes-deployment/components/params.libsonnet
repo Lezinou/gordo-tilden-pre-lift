@@ -14,7 +14,6 @@
       servicePort: 80,
       type: "LoadBalancer",
     },
-
     "workflow-initiator": {
       image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.2",
       name: "ks-workflow-initiator",
