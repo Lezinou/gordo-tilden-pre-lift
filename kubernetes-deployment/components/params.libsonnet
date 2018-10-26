@@ -18,7 +18,7 @@
       image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.2",
       name: "ks-workflow-initiator",
       serviceAccountName: "gordo-workflow-runner",
-      namespace: "default",
+      namespace: "kubeflow",
       roleName: "submit-workflows-role"
     },
   },
