@@ -17,7 +17,8 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
          "backoffLimit": 2,
          "template": {
             "metadata": {
-               "name": wfparams.name
+               "name": wfparams.name,
+               "namespace": wfparams.namespace
             },
             "spec": {
                "serviceAccountName": wfparams.serviceAccountName,
