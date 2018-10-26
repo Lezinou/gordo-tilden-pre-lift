@@ -15,7 +15,7 @@
       type: "LoadBalancer",
     },
     "workflow-initiator": {
-      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.0.2",
+      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:29d5746c-dev",
       name: "ks-workflow-initiator",
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
