@@ -129,7 +129,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
        ],
        "roleRef": {
            "kind": "ClusterRole",
-           "name": "admin",
+           "name": "cluster-admin",
            "apiGroup": "rbac.authorization.k8s.io"
        },
    },
