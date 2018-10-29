@@ -35,6 +35,14 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                              "name": "ARGO_SUBMIT",
                              "value": "true"
                          },
+                         {
+                             "name": "WORKFLOW_GENERATOR_MODEL_BUILDER_VERSION",
+                             "value": wfparams.modelBuilderVersion
+                         },
+                         {
+                             "name": "WORKFLOW_GENERATOR_MODEL_SERVER_VERSION",
+                             "value": wfparams.modelServerVersion
+                         },
                      ],
                   }
                ],
