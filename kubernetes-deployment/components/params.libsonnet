@@ -12,8 +12,8 @@
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
-      modelBuilderVersion: "18d83672-dev",
-      modelServerVersion: "18d83672-dev"
+      modelBuilderVersion: "221f4a77-dev",
+      modelServerVersion: "221f4a77-dev"
     },
   },
 }
