@@ -1,4 +1,9 @@
 machines:
+ CT-23-0001:
+   tags:
+     - GRA-GT  -23-0607.PV
+     - GRA-SE -23-0599AX.PV
+
  Machine-1:
    tags:
      - GRA-GT  -23-0607.PV
