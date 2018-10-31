@@ -13,7 +13,6 @@ machines:
 
  Machine-2:
    tags:
-     - GRA-GT  -23-0607.PV
      - GRA-TE  -23-0734SEL.PV
      - GRA-YE  -23-0753X.PV
      - GRA-TE  -23-0737C.PV
