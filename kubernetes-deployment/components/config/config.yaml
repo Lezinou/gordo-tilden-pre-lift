@@ -9,8 +9,9 @@ machines:
      - GRA-TE  -23-0734SEL.PV
      - GRA-YE  -23-0753X.PV
      - GRA-TE  -23-0737B.PV
+     - GRA-TE  -23-0737C.PV
 
- Machine-2:
+ OilRigPart1:
    tags:
      - GRA-TE  -23-0734SEL.PV
      - GRA-YE  -23-0753X.PV
