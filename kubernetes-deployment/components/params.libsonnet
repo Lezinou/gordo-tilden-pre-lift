@@ -12,7 +12,7 @@
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
-      tagFetcherVersion: "latest",
+      tagFetcherVersion: "0.0.1",
       modelBuilderVersion: "a43b1126-dev"
       //modelServerVersion: "0.0.2"
     },
