@@ -13,7 +13,7 @@
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
       tagFetcherVersion: "0.0.1",
-      modelBuilderVersion: "9bc58ec0-dev"
+      modelBuilderVersion: "b7a533f2-dev"
       //modelServerVersion: "0.0.2"
     },
   },
