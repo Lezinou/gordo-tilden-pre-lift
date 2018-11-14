@@ -8,9 +8,10 @@ machines:
     train_end_date: 2018-09-15T03:01:00+01:00
   CT-23-0002: #2nd machine
     tags: #list of tags for 2nd machine
-      - GRA-YE  -23-0751X.PV
-      - GRA-TE  -23-0698.PV
-      - GRA-PIT -23-0619B.PV
+      - GRA-TE  -23-0734SEL.PV
+      - GRA-YE  -23-0753X.PV
+      - GRA-TE  -23-0737B.PV
+      - GRA-TE  -23-0737C.PV
     train_start_date: 2014-05-20T01:00:04+02:00
     train_end_date: 2018-05-10T15:05:50+02:00
   CT-23-0003: #3rd machine
