@@ -15,7 +15,7 @@
       projectName: "gordo-test-project",
       tagFetcherVersion: "0.0.1",
       modelBuilderVersion: "0.0.4",
-      modelServerVersion: "0.0.4"
+      modelServerVersion: "f07c4cd7-dev"
     },
   },
 }
