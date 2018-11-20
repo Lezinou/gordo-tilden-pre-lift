@@ -1,12 +1,12 @@
 machines:
-  CT-23-0001: #1st machine
+  CT-23-miles3: #1st machine
     tags: #list of tags for 1st machine
       - GRA-TE  -23-0733.PV
       - GRA-TT  -23-0719.PV
       - GRA-YE  -23-0751X.PV
     train_start_date: 2016-01-07T09:11:30+01:00
     train_end_date: 2018-09-15T03:01:00+01:00
-  CT-23-0002: #2nd machine
+  CT-23-miles2: #2nd machine
     tags: #list of tags for 2nd machine
       - GRA-TE  -23-0734SEL.PV
       - GRA-YE  -23-0753X.PV
@@ -14,7 +14,7 @@ machines:
     train_start_date: 2016-01-20T01:00:04+02:00
     train_end_date: 2018-05-10T15:05:50+02:00
 
-  CT-23-0003: #3rd machine
+  CT-23-miles1: #3rd machine
     tags: #list of tags for 3rd machine
       - GRA-TE  -23-0699.PV
       - GRA-PIT -23-0619B.PV
