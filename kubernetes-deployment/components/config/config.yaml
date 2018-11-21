@@ -20,3 +20,12 @@ machines:
       - GRA-PIT -23-0619B.PV
     train_start_date: 2016-01-15T13:03:04+02:00
     train_end_date: 2018-03-11T11:05:10+02:00
+
+model:
+  sklearn.pipeline.Pipeline:
+    steps:
+      - sklearn.pipeline.FeatureUnion:
+          - sklearn.preprocessing.data.MinMaxScaler
+          - sklearn.preprocessing.data.MinMaxScaler
+      - gordo_components.model.models.KerasAutoEncoder:
+          kind: feedforward_symetric
