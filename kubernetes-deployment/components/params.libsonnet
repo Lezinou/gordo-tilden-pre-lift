@@ -13,7 +13,7 @@
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
       projectName: "gordo-test-project",
-      tagFetcherVersion: "0.0.1",
+      tagFetcherVersion: "0.0.3",
       modelBuilderVersion: "0.0.4",
       modelServerVersion: "2e6dc73f-dev"
     },
