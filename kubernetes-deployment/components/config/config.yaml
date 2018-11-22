@@ -28,4 +28,4 @@ model:
         - sklearn.preprocessing.data.MinMaxScaler
         - sklearn.preprocessing.data.MinMaxScaler
       - gordo_components.model.models.KerasAutoEncoder:
-        kind: feedforward_symetric
+          kind: feedforward_symetric
