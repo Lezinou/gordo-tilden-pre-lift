@@ -29,6 +29,5 @@ model:
     steps:
       - sklearn.pipeline.FeatureUnion:
         - sklearn.preprocessing.data.MinMaxScaler
-      - gordo_components.model.models.KerasAsgardAutoEncoder:
+      - gordo_components.model.models.KerasAutoEncoder:
           kind: feedforward_symetric
-          estimated_negative_sample_ratio: 0.5
