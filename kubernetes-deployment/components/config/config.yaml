@@ -17,7 +17,7 @@ machines:
     train_end_date: 2018-05-10T15:05:50+02:00
 
   CT-23-awesomeness: #3rd machine
-    tags: #list of tags for 3rd machine
+    tags: #list of tags for 3rd machine 
       - GRA-TE  -23-0734SEL.PV
       - GRA-YE  -23-0753X.PV
       - GRA-TE  -23-0737B.PV
