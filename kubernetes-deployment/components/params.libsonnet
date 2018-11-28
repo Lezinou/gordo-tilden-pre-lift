@@ -14,8 +14,8 @@
       roleName: "submit-workflows-role",
       projectName: "gordo-test-project",
       tagFetcherVersion: "0.0.3",
-      modelBuilderVersion: "0.1.1",
-      modelServerVersion: "0.1.1"
+      modelBuilderVersion: "a52638f9-dev",
+      modelServerVersion: "a52638f9-dev"
     },
   },
 }

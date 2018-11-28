@@ -29,5 +29,5 @@ model:
     steps:
       - sklearn.pipeline.FeatureUnion:
         - sklearn.preprocessing.data.MinMaxScaler
-      - gordo_components.model.models.KerasAutoEncoder:
+      - gordo_components.model.models.KerasEchoAutoEncoder:
           kind: feedforward_symetric
