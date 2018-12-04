@@ -27,7 +27,14 @@ machines:
 model:
   sklearn.pipeline.Pipeline:
     steps:
+
       - sklearn.pipeline.FeatureUnion:
         - sklearn.preprocessing.data.MinMaxScaler
+
+      - sklearn.preprocessing._function_transformer.FunctionTransformer:
+          func: gordo_components.model.transformer_funcs.general.multiply_by
+          kw_args:
+            factor: 1
+
       - gordo_components.model.models.KerasAutoEncoder:
           kind: feedforward_symetric
