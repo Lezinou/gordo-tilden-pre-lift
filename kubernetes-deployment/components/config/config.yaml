@@ -299,7 +299,6 @@ machines:
       - GRA-TE  -23-0701.PV
       - GRA-TE  -23-0701A.PV
       - GRA-TE  -23-0701B.PV
-      - GRA-TIT -23-0615.pv
       - GRA-TIT -23-0700.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -351,7 +350,6 @@ machines:
       - GRA-TE  -23-0734H.PV
       - GRA-TE  -23-0734SEL.PV
       - GRA-TE  -23-0734SPD.PV
-      - GRA-TIT -23-0615.PV
       - GRA-TT  -23-0609A.PV
       - GRA-TT  -23-0609B.PV
       - GRA-UV  -23-0682.PV
@@ -554,7 +552,6 @@ machines:
       - GRA-NRA -80-2869.PV
       - GRA-PI  -80-2110A.PV
       - GRA-TT  -80-2111.PV
-      - GRA-GT  -80-2031AB.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   CT-80-0001B - Gas Turbine>Synthetic Oil System:
