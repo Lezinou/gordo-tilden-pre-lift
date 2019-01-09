@@ -780,6 +780,546 @@ machines:
       - GRA-YT  -80-2611Y.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
+  G-01 Y>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9010.PV
+      - GRA-FYI -13-9011.PV
+      - GRA-FYI -13-9012.PV
+      - GRA-STAT-20-1310_G01.ST
+      - GRA-FIC -13-0041X.PV
+      - GRA-PZT -13-0029.PV
+      - GRA-HIC -13-0035.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-01 Y>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G01.ST
+      - GRA-QT  -13-0851.PV
+      - GRA-QT  -13-0851.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-01 Y>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G01.ST
+      - GRA-PZT -13-0037.PV
+      - GRA-PT  -13-0032.PV
+      - GRA-TT  -13-0036.PV
+      - GRA-TT  -13-0034.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-01 Y>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G01.ST
+      - GRA-HIC -13-0035.PV
+      - GRA-PT  -13-0032.PV
+      - GRA-PZT -13-0037.PV
+      - GRA-QT  -13-0851.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-02 BY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9020.PV
+      - GRA-FYI -13-9021.PV
+      - GRA-FYI -13-9022.PV
+      - GRA-STAT-20-1310_G02.ST
+      - GRA-FIC -13-0316X.PV
+      - GRA-PT  -13-0307.PV
+      - GRA-HIC -13-0310.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-02 BY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G02.ST
+      - GRA-QT  -13-0852.PV
+      - GRA-QT  -13-0852.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-02 BY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G02.ST
+      - GRA-PZT -13-0312.PV
+      - GRA-PT  -13-0307.PV
+      - GRA-TT  -13-0311.PV
+      - GRA-TT  -13-0309.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-02 BY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G02.ST
+      - GRA-HIC -13-0310.PV
+      - GRA-PT  -13-0307.PV
+      - GRA-PZT -13-0312.PV
+      - GRA-QT  -13-0852.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-03 Y>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9030.PV
+      - GRA-FYI -13-9031.PV
+      - GRA-FYI -13-9032.PV
+      - GRA-STAT-20-1310_G03.ST
+      - GRA-FIC -13-0066X.PV
+      - GRA-PZT -13-0054.PV
+      - GRA-HIC -13-0060.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-03 Y>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G03.ST
+      - GRA-QT  -13-0853.PV
+      - GRA-QT  -13-0853.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-03 Y>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G03.ST
+      - GRA-PZT -13-0062.PV
+      - GRA-PT  -13-0057.PV
+      - GRA-TT  -13-0061.PV
+      - GRA-TT  -13-0059.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-03 Y>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G03.ST
+      - GRA-HIC -13-0060.PV
+      - GRA-PT  -13-0057.PV
+      - GRA-PZT -13-0062.PV
+      - GRA-QT  -13-0853.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-05 BY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9050.PV
+      - GRA-FYI -13-9051.PV
+      - GRA-FYI -13-9052.PV
+      - GRA-STAT-20-1310_G05.ST
+      - GRA-FIC -13-0116X.PV
+      - GRA-PZT -13-0104.PV
+      - GRA-HIC -13-0110.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-05 BY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G05.ST
+      - GRA-QT  -13-0855.PV
+      - GRA-QT  -13-0855.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-05 BY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G05.ST
+      - GRA-PZT -13-0112.PV
+      - GRA-PT  -13-0107.PV
+      - GRA-TT  -13-0111.PV
+      - GRA-TT  -13-0109.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-05 BY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G05.ST
+      - GRA-HIC -13-0110.PV
+      - GRA-PT  -13-0107.PV
+      - GRA-PZT -13-0112.PV
+      - GRA-QT  -13-0855.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-06 AY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9060.PV
+      - GRA-FYI -13-9061.PV
+      - GRA-FYI -13-9062.PV
+      - GRA-STAT-20-1310_G06.ST
+      - GRA-FIC -13-0141C.PV
+      - GRA-PZT -13-0129.PV
+      - GRA-HIC -13-0135.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-06 AY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G06.ST
+      - GRA-QT  -13-0856.PV
+      - GRA-QT  -13-0856.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-06 AY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G06.ST
+      - GRA-PZT -13-0137.PV
+      - GRA-PT  -13-0132.PV
+      - GRA-TT  -13-0136.PV
+      - GRA-TT  -13-0134.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-06 AY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G06.ST
+      - GRA-HIC -13-0135.PV
+      - GRA-PT  -13-0132.PV
+      - GRA-PZT -13-0137.PV
+      - GRA-QT  -13-0856.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-07 Y>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9070.PV
+      - GRA-FYI -13-9071.PV
+      - GRA-FYI -13-9072.PV
+      - GRA-STAT-20-1310_G07.ST
+      - GRA-FIC -13-0166X.PV
+      - GRA-PZT -13-0154.PV
+      - GRA-HIC -13-0160.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-07 Y>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G07.ST
+      - GRA-QT  -13-0857.PV
+      - GRA-QT  -13-0857.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-07 Y>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G07.ST
+      - GRA-PZT -13-0162.PV
+      - GRA-PT  -13-0157.PV
+      - GRA-TT  -13-0161.PV
+      - GRA-TT  -13-0159.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-07 Y>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G07.ST
+      - GRA-HIC -13-0160.PV
+      - GRA-PT  -13-0157.PV
+      - GRA-PZT -13-0162.PV
+      - GRA-QT  -13-0857.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-08 BY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9080.PV
+      - GRA-FYI -13-9081.PV
+      - GRA-FYI -13-9082.PV
+      - GRA-STAT-20-1310_G08.ST
+      - GRA-FIC -13-0191X.PV
+      - GRA-PZT -13-0179.PV
+      - GRA-HIC -13-0185.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-08 BY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G08.ST
+      - GRA-QT  -13-0858.PV
+      - GRA-QT  -13-0858.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-08 BY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G08.ST
+      - GRA-PZT -13-0187.PV
+      - GRA-PT  -13-0182.PV
+      - GRA-TT  -13-0186.PV
+      - GRA-TT  -13-0184.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-08 BY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G08.ST
+      - GRA-HIC -13-0185.PV
+      - GRA-PT  -13-0182.PV
+      - GRA-PZT -13-0187.PV
+      - GRA-QT  -13-0858.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-09>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9090.PV
+      - GRA-FYI -13-9091.PV
+      - GRA-FYI -13-9092.PV
+      - GRA-STAT-20-1310_G09.ST
+      - GRA-FIC -13-0216X.PV
+      - GRA-PZT -13-0204.PV
+      - GRA-HIC -13-0210.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-09>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G09.ST
+      - GRA-QT  -13-0859.PV
+      - GRA-QT  -13-0859.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-09>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G09.ST
+      - GRA-PZT -13-0212.PV
+      - GRA-PT  -13-0207.PV
+      - GRA-TT  -13-0211.PV
+      - GRA-TT  -13-0209.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-09>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G09.ST
+      - GRA-HIC -13-0210.PV
+      - GRA-PT  -13-0207.PV
+      - GRA-PZT -13-0212.PV
+      - GRA-QT  -13-0859.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-11 BY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9110.PV
+      - GRA-FYI -13-9111.PV
+      - GRA-FYI -13-9112.PV
+      - GRA-STAT-20-1310_G11.ST
+      - GRA-FIC -13-0241X.PV
+      - GRA-PZT -13-0229.PV
+      - GRA-HIC -13-0235.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-11 BY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G11.ST
+      - GRA-QT  -13-0861.PV
+      - GRA-QT  -13-0861.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-11 BY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G11.ST
+      - GRA-PZT -13-0237.PV
+      - GRA-PT  -13-0232.PV
+      - GRA-TT  -13-0236.PV
+      - GRA-TT  -13-0234.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-11 BY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G11.ST
+      - GRA-HIC -13-0235.PV
+      - GRA-PT  -13-0232.PV
+      - GRA-PZT -13-0237.PV
+      - GRA-QT  -13-0861.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-12 AY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9120.PV
+      - GRA-FYI -13-9121.PV
+      - GRA-FYI -13-9122.PV
+      - GRA-STAT-20-1310_G12.ST
+      - GRA-FIC -13-0266X.PV
+      - GRA-PZT -13-0254.PV
+      - GRA-HIC -13-0260.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-12 AY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G12.ST
+      - GRA-QT  -13-0862.PV
+      - GRA-QT  -13-0862.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-12 AY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G12.ST
+      - GRA-PZT -13-0262.PV
+      - GRA-PT  -13-0257.PV
+      - GRA-TT  -13-0261.PV
+      - GRA-TT  -13-0259.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-12 AY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G12.ST
+      - GRA-HIC -13-0260.PV
+      - GRA-PT  -13-0257.PV
+      - GRA-PZT -13-0262.PV
+      - GRA-QT  -13-0862.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-13 Y>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9130.PV
+      - GRA-FYI -13-9131.PV
+      - GRA-FYI -13-9132.PV
+      - GRA-STAT-20-1310_G13.ST
+      - GRA-FIC -13-0466X.PV
+      - GRA-PZT -13-0454.PV
+      - GRA-HIC -13-0460.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-13 Y>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G13.ST
+      - GRA-QT  -13-0873.PV
+      - GRA-QT  -13-0873.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-13 Y>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G13.ST
+      - GRA-PZT -13-0462.PV
+      - GRA-PT  -13-0457.PV
+      - GRA-TT  -13-0461.PV
+      - GRA-TT  -13-0459.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-13 Y>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G13.ST
+      - GRA-HIC -13-0460.PV
+      - GRA-PT  -13-0457.PV
+      - GRA-PZT -13-0462.PV
+      - GRA-QT  -13-0873.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-15 Y>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9150.PV
+      - GRA-FYI -13-9151.PV
+      - GRA-FYI -13-9152.PV
+      - GRA-STAT-20-1310_G15.ST
+      - GRA-FIC -13-0716X.PV
+      - GRA-PZT -13-0704.PV
+      - GRA-HIC -13-0710.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-15 Y>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G15.ST
+      - GRA-QT  -13-0864.PV
+      - GRA-QT  -13-0864.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-15 Y>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G15.ST
+      - GRA-PZT -13-0712.PV
+      - GRA-PT  -13-0707.PV
+      - GRA-TT  -13-0711.PV
+      - GRA-TT  -13-0709.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-15 Y>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G15.ST
+      - GRA-HIC -13-0710.PV
+      - GRA-PT  -13-0707.PV
+      - GRA-PZT -13-0712.PV
+      - GRA-QT  -13-0864.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-16 AY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9160.PV
+      - GRA-FYI -13-9161.PV
+      - GRA-FYI -13-9162.PV
+      - GRA-STAT-20-1310_G16.ST
+      - GRA-FIC -13-0341X.PV
+      - GRA-PZT -13-0329.PV
+      - GRA-HIC -13-0335.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-16 AY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G16.ST
+      - GRA-QT  -13-0866.PV
+      - GRA-QT  -13-0866.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-16 AY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G16.ST
+      - GRA-PZT -13-0337.PV
+      - GRA-PT  -13-0332.PV
+      - GRA-TT  -13-0336.PV
+      - GRA-TT  -13-0334.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-16 AY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G16.ST
+      - GRA-HIC -13-0335.PV
+      - GRA-PT  -13-0332.PV
+      - GRA-PZT -13-0337.PV
+      - GRA-QT  -13-0866.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-17 CY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9170.PV
+      - GRA-FYI -13-9171.PV
+      - GRA-FYI -13-9172.PV
+      - GRA-STAT-20-1310_G17.ST
+      - GRA-FIC -13-0366X.PV
+      - GRA-PZT -13-0354.PV
+      - GRA-HIC -13-0360.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-17 CY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G17.ST
+      - GRA-QT  -13-0876.PV
+      - GRA-QT  -13-0876.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-17 CY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G17.ST
+      - GRA-PZT -13-0362.PV
+      - GRA-PT  -13-0357.PV
+      - GRA-TT  -13-0361.PV
+      - GRA-TT  -13-0359.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-17 CY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G17.ST
+      - GRA-HIC -13-0360.PV
+      - GRA-PT  -13-0357.PV
+      - GRA-PZT -13-0362.PV
+      - GRA-QT  -13-0876.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-18 AY>8001 - Theoretical production rates:
+    tags:
+      - GRA-FYI -13-9180.PV
+      - GRA-FYI -13-9181.PV
+      - GRA-FYI -13-9182.PV
+      - GRA-STAT-20-1310_G18.ST
+      - GRA-FIC -13-0391X.PV
+      - GRA-PZT -13-0379.PV
+      - GRA-HIC -13-0385.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-18 AY>8005 - Erosion rate:
+    tags:
+      - GRA-STAT-20-1310_G18.ST
+      - GRA-QT  -13-0877.PV
+      - GRA-QT  -13-0877.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-18 AY>8070 - Fluid properties (Simplified):
+    tags:
+      - GRA-STAT-20-1310_G18.ST
+      - GRA-PZT -13-0387.PV
+      - GRA-PT  -13-0382.PV
+      - GRA-TT  -13-0386.PV
+      - GRA-TT  -13-0384.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  G-18 AY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G18.ST
+      - GRA-HIC -13-0385.PV
+      - GRA-PT  -13-0382.PV
+      - GRA-PZT -13-0387.PV
+      - GRA-QT  -13-0877.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
 model:
   sklearn.pipeline.Pipeline:
     steps:
