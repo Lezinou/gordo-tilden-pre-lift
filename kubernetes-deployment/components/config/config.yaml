@@ -792,7 +792,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G01.ST
       - GRA-QT  -13-0851.PV
-      - GRA-QT  -13-0851.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-01 Y>8070 - Fluid properties (Simplified):
@@ -827,7 +826,6 @@ machines:
   G-02 BY>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G02.ST
-      - GRA-QT  -13-0852.PV
       - GRA-QT  -13-0852.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -864,7 +862,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G03.ST
       - GRA-QT  -13-0853.PV
-      - GRA-QT  -13-0853.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-03 Y>8070 - Fluid properties (Simplified):
@@ -899,7 +896,6 @@ machines:
   G-05 BY>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G05.ST
-      - GRA-QT  -13-0855.PV
       - GRA-QT  -13-0855.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -936,7 +932,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G06.ST
       - GRA-QT  -13-0856.PV
-      - GRA-QT  -13-0856.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-06 AY>8070 - Fluid properties (Simplified):
@@ -971,7 +966,6 @@ machines:
   G-07 Y>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G07.ST
-      - GRA-QT  -13-0857.PV
       - GRA-QT  -13-0857.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -1008,7 +1002,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G08.ST
       - GRA-QT  -13-0858.PV
-      - GRA-QT  -13-0858.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-08 BY>8070 - Fluid properties (Simplified):
@@ -1043,7 +1036,6 @@ machines:
   G-09>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G09.ST
-      - GRA-QT  -13-0859.PV
       - GRA-QT  -13-0859.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -1080,7 +1072,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G11.ST
       - GRA-QT  -13-0861.PV
-      - GRA-QT  -13-0861.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-11 BY>8070 - Fluid properties (Simplified):
@@ -1115,7 +1106,6 @@ machines:
   G-12 AY>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G12.ST
-      - GRA-QT  -13-0862.PV
       - GRA-QT  -13-0862.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -1152,7 +1142,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G13.ST
       - GRA-QT  -13-0873.PV
-      - GRA-QT  -13-0873.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-13 Y>8070 - Fluid properties (Simplified):
@@ -1187,7 +1176,6 @@ machines:
   G-15 Y>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G15.ST
-      - GRA-QT  -13-0864.PV
       - GRA-QT  -13-0864.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -1224,7 +1212,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G16.ST
       - GRA-QT  -13-0866.PV
-      - GRA-QT  -13-0866.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-16 AY>8070 - Fluid properties (Simplified):
@@ -1259,7 +1246,6 @@ machines:
   G-17 CY>8005 - Erosion rate:
     tags:
       - GRA-STAT-20-1310_G17.ST
-      - GRA-QT  -13-0876.PV
       - GRA-QT  -13-0876.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
@@ -1296,7 +1282,6 @@ machines:
     tags:
       - GRA-STAT-20-1310_G18.ST
       - GRA-QT  -13-0877.PV
-      - GRA-QT  -13-0877.PV
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-18 AY>8070 - Fluid properties (Simplified):
@@ -1309,6 +1294,15 @@ machines:
     train_end_date: 2017-05-01 00:00:00+00:00
     train_start_date: 2017-03-01 00:00:00+00:00
   G-18 AY>8081 - Choke surveillance:
+    tags:
+      - GRA-STAT-20-1310_G18.ST
+      - GRA-HIC -13-0385.PV
+      - GRA-PT  -13-0382.PV
+      - GRA-PZT -13-0387.PV
+      - GRA-QT  -13-0877.PV
+    train_end_date: 2017-05-01 00:00:00+00:00
+    train_start_date: 2017-03-01 00:00:00+00:00
+  Number 100 Whohoo:
     tags:
       - GRA-STAT-20-1310_G18.ST
       - GRA-HIC -13-0385.PV
