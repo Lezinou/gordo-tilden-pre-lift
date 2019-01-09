@@ -7,13 +7,13 @@
     // Component-level parameters, defined initially from 'ks prototype use ...'
     // Each object below should correspond to a component in the components/ directory
     "workflow-initiator": {
-      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:1d1f74fb-dev",
+      image: "auroradevacr.azurecr.io/gordo-infrastructure/gordo-deploy:0.6.0",
       name: "ks-workflow-initiator",
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
       projectName: "gordo-test-project",
-      tagFetcherVersion: "6b24b453",
+      tagFetcherVersion: "0.3.0",
       //modelBuilderVersion: "04c0c10e-dev",
       //modelServerVersion: "04c0c10e-dev"
     },
