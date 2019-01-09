@@ -66,7 +66,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
    },
 
    // Storage class - azurefile
-   {
+   /*{
         "apiVersion": "storage.k8s.io/v1",
         "kind": "StorageClass",
         "metadata": {
@@ -84,7 +84,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
         },
         "provisioner": "kubernetes.io/azure-file",
         "reclaimPolicy": "Delete"
-    },
+    },*/
 
    // Persistant volume claim - instance of storage class
     {
