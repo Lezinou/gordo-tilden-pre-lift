@@ -1,109 +1,27 @@
 machines:
-  G-01 Y>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G01.ST
-    - GRA-QT  -13-0851.PV
-    - GRA-QTR -13-0851.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-02 BY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G02.ST
-    - GRA-QT  -13-0852.PV
-    - GRA-QTR -13-0852.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-03 Y>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G03.ST
-    - GRA-QT  -13-0853.PV
-    - GRA-QTR -13-0853.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-05 BY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G05.ST
-    - GRA-QT  -13-0855.PV
-    - GRA-QTR -13-0855.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-06 AY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G06.ST
-    - GRA-QT  -13-0856.PV
-    - GRA-QTR -13-0856.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-07 Y>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G07.ST
-    - GRA-QT  -13-0857.PV
-    - GRA-QTR -13-0857.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-08 BY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G08.ST
-    - GRA-QT  -13-0858.PV
-    - GRA-QTR -13-0858.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-09>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G09.ST
-    - GRA-QT  -13-0859.PV
-    - GRA-QTR -13-0859.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-11 BY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G11.ST
-    - GRA-QT  -13-0861.PV
-    - GRA-QTR -13-0861.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-12 AY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G12.ST
-    - GRA-QT  -13-0862.PV
-    - GRA-QTR -13-0862.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-13 Y>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G13.ST
-    - GRA-QT  -13-0873.PV
-    - GRA-QTR -13-0873.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-15 Y>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G15.ST
-    - GRA-QT  -13-0864.PV
-    - GRA-QTR -13-0864.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-16 AY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G16.ST
-    - GRA-QT  -13-0866.PV
-    - GRA-QTR -13-0866.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-17 CY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G17.ST
-    - GRA-QT  -13-0876.PV
-    - GRA-QTR -13-0876.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
-  G-18 AY>8005 - Erosion rate:
-    tags:
-    - GRA-STAT-20-1310_G18.ST
-    - GRA-QT  -13-0877.PV
-    - GRA-QTR -13-0877.PV
-    train_end_date: 2017-05-01 00:00:00+00:00
-    train_start_date: 2017-03-01 00:00:00+00:00
+  CT-23-KbBBerik123g: #1st machine
+    tags: #list of tags for 1st machine
+      - GRA-TE  -23-0733.PV
+      - GRA-TT  -23-0719.PV
+      - GRA-YE  -23-0751X.PV
+    train_start_date: 2016-01-07T09:11:30+01:00
+    train_end_date: 2018-09-15T03:01:00+01:00
+
+  CT-23-KbBBerik1234g: #2nd machine
+    tags: #list of tags for 2nd machine
+      - GRA-TE  -23-0734SEL.PV
+      - GRA-YE  -23-0753X.PV
+      - GRA-TE  -23-0737B.PV
+    train_start_date: 2016-01-20T01:00:04+02:00
+    train_end_date: 2018-05-10T15:05:50+02:00
+
+  CT-23-massiveawesomenessMg: #3rd machine
+    tags: #list of tags for 3rd machine
+      - GRA-TE  -23-0734SEL.PV
+      - GRA-YE  -23-0753X.PV
+      - GRA-TE  -23-0737B.PV
+    train_start_date: 2016-01-15T13:03:04+02:00
+    train_end_date: 2018-03-11T11:05:10+02:00
 model:
   sklearn.pipeline.Pipeline:
     steps:
