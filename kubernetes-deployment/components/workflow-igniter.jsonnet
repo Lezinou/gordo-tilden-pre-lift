@@ -1,6 +1,64 @@
 local env = std.extVar("__ksonnet/environments");
 local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"];
 [
+
+    /*
+        This Deployment is here with the sole purpose of detecting changes in the
+        config file. The config file is loaded as an env var to it, so when it changes
+        ArgoCD triggers a new apply which triggers the PostSync job which actually submits
+        the workflow.
+
+        Additionally, it turns out that it needs to be a 'running' service, not something
+        like busybox and echoing the config file for example. Thus we have a dumb looking
+        nginx server until a better solution presents itself.
+
+    */
+    {
+        "apiVersion": "apps/v1",
+        "kind": "Deployment",
+        "metadata": {
+            "name": wfparams.projectName,
+            "labels": {
+                "app": wfparams.projectName
+            }
+        },
+        "spec": {
+            "selector": {
+                "matchLabels": {
+                    "app": wfparams.projectName
+                }
+            },
+            "template": {
+                "metadata": {
+                    "labels": {
+                        "app": wfparams.projectName
+                    }
+                },
+                "spec": {
+                    "containers": [
+                        {
+                            "image": "nginx:alpine",
+                            "name": "nginx",
+                            "resources": {
+                                "requests": {
+                                    "cpu": "25m",
+                                    "memory": "10Mi"
+                                }
+                            },
+                            "env": [
+                                {
+                                    "name": "CONFIG",
+                                    "value": importstr "./config/config.yaml"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+        }
+    },
+
+
     {
       "apiVersion": "batch/v1",
       "kind": "Job",
@@ -41,7 +99,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                              "name": "WORKFLOW_GENERATOR_PROJECT_NAME",
                              "value": wfparams.projectName
                          },
-                         /*
+
                          {
                              "name": "WORKFLOW_GENERATOR_TAG_FETCHER_VERSION",
                              "value": wfparams.tagFetcherVersion
@@ -61,7 +119,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                              "name": "WORKFLOW_GENERATOR_WATCHMAN_VERSION",
                              "value": wfparams.watchmanVersion
                          }
-                         */
+
                      ],
                   }
                ],
@@ -69,115 +127,5 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
             }
          }
       }
-   },
-
-   // Storage class - azurefile
-   /*{
-        "apiVersion": "storage.k8s.io/v1",
-        "kind": "StorageClass",
-        "metadata": {
-            "name": "standard",
-        },
-        "mountOptions": [
-            "dir_mode=0777",
-            "file_mode=0777",
-            "uid=1000",
-            "gid=1000"
-        ],
-        "parameters": {
-            "skuName": "Standard_LRS",
-            "storageAccount": "auroraprodstorageaccount"
-        },
-        "provisioner": "kubernetes.io/azure-file",
-        "reclaimPolicy": "Delete"
-    },*/
-
-   // Persistant volume claim - instance of storage class
-    {
-        "apiVersion": "v1",
-        "kind": "PersistentVolumeClaim",
-        "metadata": {
-            "name": "azurefile",
-            "namespace": wfparams.namespace
-        },
-        "spec": {
-            "accessModes": ["ReadWriteMany"],
-            "resources": {
-                "requests": {
-                    "storage": "5Gi"
-                },
-            },
-            "storageClassName": "standard"
-        },
-    },
-
-   //  Role
-   {
-       "apiVersion": "rbac.authorization.k8s.io/v1",
-       "kind": "Role",
-       "metadata": {
-           "namespace": wfparams.namespace,
-           "name": wfparams.roleName
-       },
-       "rules": [
-           {
-               "apiGroups": ["argoproj.io"],
-               "resources": ["workflows"],
-               "verbs": ["get", "list", "watch", "create", "update", "patch", "delete"],
-           },
-       ],
-   },
-
-
-   // ServiceAccount
-    {
-        "apiVersion": "v1",
-        "kind": "ServiceAccount",
-        "metadata": {
-            "name": wfparams.serviceAccountName,
-            "namespace": wfparams.namespace
-        },
-    },
-
-   // RoleBinding - default view, allow read-only
-   {
-       "apiVersion": "rbac.authorization.k8s.io/v1",
-       "kind": "RoleBinding",
-       "metadata": {
-           "name": "default-view",
-           "namespace": wfparams.namespace
-       },
-       "subjects": [
-           {
-               "kind": "ServiceAccount",
-               "name": "default",
-           },
-       ],
-       "roleRef": {
-           "kind": "ClusterRole",
-           "name": "cluster-admin",
-           "apiGroup": "rbac.authorization.k8s.io"
-       },
-   },
-
-   // RoleBinding - allow argo submitting
-   {
-       "apiVersion": "rbac.authorization.k8s.io/v1",
-       "kind": "RoleBinding",
-       "metadata": {
-           "name": wfparams.roleName,
-           "namespace": wfparams.namespace
-       },
-       "subjects": [
-           {
-               "kind": "ServiceAccount",
-               "name": wfparams.serviceAccountName,
-           },
-       ],
-       "roleRef": {
-           "kind": "Role",
-           "name": wfparams.roleName,
-           "apiGroup": "rbac.authorization.k8s.io"
-       },
-   },
+   }
 ]
