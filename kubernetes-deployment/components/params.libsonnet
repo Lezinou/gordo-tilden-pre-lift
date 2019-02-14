@@ -12,7 +12,7 @@
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
-      projectName: "gordo-test-project-on-gordotest01",
+      projectName: "Lezin-project-test",
       tagFetcherVersion: "0.3.0"
       /*
       modelBuilderVersion: "4385aba8",
