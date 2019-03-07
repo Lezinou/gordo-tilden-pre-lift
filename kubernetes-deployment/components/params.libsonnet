@@ -14,9 +14,11 @@
       roleName: "submit-workflows-role",
       projectName: "lezinou",
       tagFetcherVersion: "0.3.0",
-      modelBuilderVersion: "a542ba8e-dev",
-      modelServerVersion: "a542ba8e-dev",
-      watchmanVersion: "0.11.0"
+      modelBuilderVersion: "a542ba8e-dev"
+      /*
+      modelServerVersion: "4385aba8",
+      watchmanVersion: "4385aba8"
+      */
     },
   },
 }
