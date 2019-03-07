@@ -13,7 +13,7 @@
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
       projectName: "lezinou",
-      tagFetcherVersion: "0.3.0"
+      tagFetcherVersion: "0.3.0",
       modelBuilderVersion: "a542ba8e-dev"
       /*
       modelServerVersion: "4385aba8",
