@@ -2,16 +2,16 @@ machines:
   - name: aery
     dataset:
       type: TimeSeriesDataset
-      tags: #list of tags
+      tags: 
       - NINENINE.UISFLD::NNWAERYDR02.WHCSGPRS
       - NINENINE.UISFLD::NNWAERYDR02.WHTBGPRS
-      - NINENINE.UISFLD::NNWAERYDR02.GASFLW
-      train_start_date: 2018-06-10T00:10:00+00:00
-      train_end_date: 2018-07-20T00:00:00+00:00
-
-model:
-  sklearn.pipeline.Pipeline:
-    steps:
-      - sklearn.preprocessing.data.MinMaxScaler
-      - gordo_components.model.models.KerasAutoEncoder:
-          kind: feedforward_symetric
+      - NINENINE.UISFLD::NNWAERYDR02.GASFLW      
+      train_start_date: 2018-06-10T00:00:00+01:00
+      train_end_date: 2015-07-20T00:00:00+01:00
+    model:
+      sklearn.pipeline.Pipeline:
+        steps:
+        - sklearn.pipeline.FeatureUnion:
+          - sklearn.preprocessing.data.MinMaxScaler
+        - gordo_components.model.models.KerasAutoEncoder:
+            kind: feedforward_symetric
