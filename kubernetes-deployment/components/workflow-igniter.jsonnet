@@ -108,8 +108,8 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                          {
                              "name": "WORKFLOW_GENERATOR_MODEL_BUILDER_VERSION",
                              "value": wfparams.modelBuilderVersion
-                         },
-                         
+                         }
+                         /*
                          {
                              "name": "WORKFLOW_GENERATOR_MODEL_SERVER_VERSION",
                              "value": wfparams.modelServerVersion
@@ -119,7 +119,7 @@ local wfparams = std.extVar("__ksonnet/params").components["workflow-initiator"]
                              "name": "WORKFLOW_GENERATOR_WATCHMAN_VERSION",
                              "value": wfparams.watchmanVersion
                          }
-
+                         */
                      ],
                   }
                ],
