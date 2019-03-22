@@ -1,21 +1,25 @@
 machines:
-  - name: powerslester
+  - name: powers-tilden
     dataset:
       type: TimeSeriesDataset
       tags: 
-      - NINENINE.UISFLD::NNWAERYDR02.WHCSGPRS
-      - NINENINE.UISFLD::NNWAERYDR02.WHTBGPRS
-      - NINENINE.UISFLD::NNWAERYDR02.GASFLW  
-      train_start_date: 2018-06-10T00:00:00+01:00
-      train_end_date: 2018-06-11T00:00:00+01:00
+      - NINENINE.UISFLD::NNWPOWTILOR01.GASFLW
+      - NINENINE.UISFLD::NNWPOWTILOR01.GASPRS
+      - NINENINE.UISFLD::NNWPOWTILOR01.WHCSGPRS
+      - NINENINE.UISFLD::NNWPOWTILOR01.WHTBGPRS
+      - NINENINE.UISFLD::NNWPOWTILOR21.GASFLW
+      train_start_date: 2018-05-15T00:00:00+01:00
+      train_end_date: 2018-07-01T00:00:00+01:00
     model:
       sklearn.pipeline.Pipeline:
         steps:
         - sklearn.pipeline.FeatureUnion:
-          - sklearn.preprocessing.data.StandardScaler
-        - gordo_components.model.models.KerasAutoEncoder:
-            kind: feedforward_model
-            enc_dim: [4,2]
-            dec_dim: [4]
+          - sklearn.preprocessing.data.MinMaxScaler
+        - gordo_components.model.models.KerasLSTMAutoEncoder:
+            kind: lstm_autoencoder
+            lookback_window: 72
+            enc_dim: [20,10]
+            dec_dim: [20]
             enc_func: [tanh,tanh]
             dec_func: [tanh]
+            out_func: linear
