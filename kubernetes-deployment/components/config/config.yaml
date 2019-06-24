@@ -8,8 +8,8 @@ machines:
       - NINENINE.UISFLD::NNWPOWTILOR01.WHCSGPRS
       - NINENINE.UISFLD::NNWPOWTILOR01.WHTBGPRS
       - NINENINE.UISFLD::NNWPOWTILOR21.GASFLW
-      train_start_date: 2019-06-22T00:00:00+00:00
-      train_end_date: 2019-06-23T00:00:00+00:00
+      train_start_date: 2018-05-15T00:00:00+00:00
+      train_end_date: 2018-07-01T00:00:00+00:00
     model:
       sklearn.pipeline.Pipeline:
         steps:
@@ -17,7 +17,7 @@ machines:
           - sklearn.preprocessing.data.MinMaxScaler
         - gordo_components.model.models.KerasLSTMAutoEncoder:
             kind: lstm_model
-            lookback_window: 2
+            lookback_window: 72
             enc_dim: [20,10]
             dec_dim: [20]
             enc_func: [tanh,tanh]
