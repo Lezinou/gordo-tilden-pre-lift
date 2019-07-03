@@ -12,7 +12,7 @@
       serviceAccountName: "gordo-workflow-runner",
       namespace: "kubeflow",
       roleName: "submit-workflows-role",
-      projectName: "iroc-tilden",
+      projectName: "iroc-tilden-pre-lift",
       tagFetcherVersion: "0.3.0",
       modelBuilderVersion: "0.13.0",
       modelServerVersion: "0.13.0",
